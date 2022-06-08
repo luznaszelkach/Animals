@@ -58,6 +58,9 @@
     <Compile Include="Birds.xaml.cs">
       <DependentUpon>Birds.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Reptiles.xaml.cs">
       <DependentUpon>Reptiles.xaml</DependentUpon>
     </Compile>
@@ -66,6 +69,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Birds.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

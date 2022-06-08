@@ -24,5 +24,19 @@ namespace Animals
         {
             InitializeComponent();
         }
+        private void HomeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ChangePage(Home);
+        }
+        public void ChangePage(UserControl control)
+        {
+            Home.Visibility = Visibility.Collapsed;
+            Mammals.Visibility = Visibility.Collapsed;
+            control.Visibility = Visibility.Visible;
+        }
+        private void MammalsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ChangePage(Mammals);
+        }
     }
 }

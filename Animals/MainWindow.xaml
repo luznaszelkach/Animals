@@ -6,7 +6,54 @@
         xmlns:local="clr-namespace:Animals"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#7CBD40" 
+              Grid.ColumnSpan="2"
+              >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Animals" 
+                       x:Name="HomeBtn" Cursor="Hand"
+                       Foreground="White"
+                       VerticalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Bold" Grid.ColumnSpan="3"  Grid.Column="1" HorizontalAlignment="Left" Click="HomeBtn_Click"/>
+            <Button    x:Name="StudentsBtn"
+                       Content="Mammals"
+                       Foreground="White"
+                       Grid.Column="4"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Cursor="Hand" Click="MammalsBtn_Click"/>
+        </Grid>
+
+        <Grid x:Name="GRID_CONTAINER" Grid.Row="1" Grid.ColumnSpan="2" Panel.ZIndex="-1">
+
+            <local:Home Visibility="Visible" x:Name="Home"></local:Home>
+            <local:Mammals Visibility="Visible" x:Name="Mammals"></local:Mammals>
+
+        </Grid>
+
     </Grid>
 </Window>

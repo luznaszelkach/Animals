@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Animals
 {
     /// <summary>
-    /// Interaction logic for Mammals.xaml
+    /// Interaction logic for Home.xaml
     /// </summary>
-    public partial class Mammals : UserControl
+    public partial class Home : UserControl
     {
-        public Mammals()
+        public Home()
         {
             InitializeComponent();
         }
