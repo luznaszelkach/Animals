@@ -8,11 +8,83 @@
       d:DesignHeight="450" d:DesignWidth="800"
       >
 
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Images/tlozielone.jpg">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
 
-            </ImageBrush>
-        </Grid.Background>
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <StackPanel Margin="100,0,0,12">
+                <TextBlock Text="Ssaki"
+                       FontSize="32"
+                       FontWeight="DemiBold"
+                       Foreground="#454647"></TextBlock>
+                <TextBlock Text="Odkryj nowe zwierzę"
+                       Foreground="#454647">
+                </TextBlock>
+
+            </StackPanel>
+
+            <StackPanel Margin="100,0,0,12" PreviewTextInput="NumberValidation">
+                <Label Content="AnimalID"></Label>
+                <TextBox x:Name="AnimalID" Width="100"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
+                <Label Content="Name"></Label>
+                <TextBox x:Name="Name" Width="180"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
+                <Label Content="Nutrition"></Label>
+                <TextBox x:Name="Nutrition" Width="180"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
+                <Label Content="Location"></Label>
+                <TextBox x:Name="Location" Width="180"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="100,0,0,12">
+                <Label Content="Size"></Label>
+                <TextBox x:Name="Size" Width="180"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="100,0,0,12">
+                <Label Content="Weight"></Label>
+                <TextBox x:Name="Weight" Width="180"></TextBox>
+            </StackPanel>
+
+            <Grid HorizontalAlignment="Left" Margin="0,75,0,0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Background="#7CBD40" Grid.Column="0" Grid.Row="0"
+                        Width="140"
+                        Height="40"
+                        FontSize="16"
+                        FontWeight="DemiBold"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Margin="121,-50,-106,15" 
+                        Click="ReadAnimals"
+                        Cursor="Hand" Grid.ColumnSpan="2">SZUKAJ</Button>
+
+            </Grid>
+        </StackPanel>
+        <Grid Grid.Column="1" Grid.ColumnSpan="2" Margin="30,0,0,0">
+            <DataGrid Name="AnimalTable" IsReadOnly="True"></DataGrid>
+        </Grid>
     </Grid>
 </UserControl>
