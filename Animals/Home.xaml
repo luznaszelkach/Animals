@@ -9,15 +9,16 @@
      >
 
     <Grid>
-        <TextBlock Text=""
-                           Foreground="#454647"
-                           FontSize="24"
-                            Margin="80,0,0,0"
+        <TextBlock Text="Atlas Zwierząt"
+                           Foreground="OrangeRed"
+                           FontSize="48"
+                           HorizontalAlignment="Center"
                            FontWeight="Medium"
-                           VerticalAlignment="Center"></TextBlock>
+                           VerticalAlignment="Center" Width="312"/>
+
         <Grid.Background>
             <ImageBrush ImageSource="/Images/backround.png">
-                
+
             </ImageBrush>
         </Grid.Background>
     </Grid>
