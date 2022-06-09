@@ -31,32 +31,32 @@
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12" PreviewTextInput="NumberValidation">
-                <Label Content="AnimalID"></Label>
+                <Label Content="Numer"></Label>
                 <TextBox x:Name="AnimalID" Width="100"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
-                <Label Content="Name"></Label>
+                <Label Content="Nazwa"></Label>
                 <TextBox x:Name="Name" Width="180"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
-                <Label Content="Nutrition"></Label>
+                <Label Content="Odżywianie"></Label>
                 <TextBox x:Name="Nutrition" Width="180"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
-                <Label Content="Location"></Label>
+                <Label Content="Występowanie"></Label>
                 <TextBox x:Name="Location" Width="180"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12">
-                <Label Content="Size"></Label>
+                <Label Content="Wielkość(cm)"></Label>
                 <TextBox x:Name="Size" Width="180"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12">
-                <Label Content="Weight"></Label>
+                <Label Content="Waga(kg)"></Label>
                 <TextBox x:Name="Weight" Width="180"></TextBox>
             </StackPanel>
 
