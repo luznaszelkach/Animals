@@ -9,6 +9,12 @@
      >
 
     <Grid>
+        <TextBlock Text=""
+                           Foreground="#454647"
+                           FontSize="24"
+                            Margin="80,0,0,0"
+                           FontWeight="Medium"
+                           VerticalAlignment="Center"></TextBlock>
         <Grid.Background>
             <ImageBrush ImageSource="/Images/backround.png">
                 
