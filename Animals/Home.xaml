@@ -10,7 +10,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Images/tlo2.jpg">
+            <ImageBrush ImageSource="/Images/backround.png">
                 
             </ImageBrush>
         </Grid.Background>
