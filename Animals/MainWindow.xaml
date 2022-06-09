@@ -8,7 +8,7 @@
         Title="MainWindow" Height="800" Width="1200">
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -21,65 +21,80 @@
               Grid.ColumnSpan="2"
               >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="0*"></ColumnDefinition>
+                <ColumnDefinition Width="101*"/>
+                <ColumnDefinition Width="19*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Content="Animals" 
+            <Button Content="Zwierzęta" 
                        x:Name="HomeBtn" Cursor="Hand"
-                       Foreground="White"
+                       Foreground="Black"
+                       VerticalAlignment="Center"
+                       FontSize="18"
+                       Height="60"
+                       Width="110"
+                       FontWeight="Bold"  Grid.Column="1" HorizontalAlignment="Center" Click="HomeBtn_Click"/>
+            <Button    x:Name="MammalsBtn"
+                       Content="Ssaki"
+                       Foreground="Black"
+                       Height="50"
+                       Width="80"
+                       Grid.Column="3"
                        VerticalAlignment="Center"
                        FontSize="14"
-                       FontWeight="Bold" Grid.ColumnSpan="3"  Grid.Column="1" HorizontalAlignment="Left" Click="HomeBtn_Click"/>
-            <Button    x:Name="MammalsBtn"
-                       Content="Mammals"
-                       Foreground="White"
-                       Grid.Column="4"
-                       VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       Cursor="Hand" Click="MammalsBtn_Click"/>
+                       Cursor="Hand" Click="MammalsBtn_Click" RenderTransformOrigin="-2.447,0.534"/>
             <Button    x:Name="AmphibiansBtn"
                        Content="Płazy"
-                       Foreground="White"
+                       Foreground="Black"
+                       Height="50"
+                       Width="80"
                        Grid.Column="4"
-                       Margin="150,0,0,0"
                        VerticalAlignment="Center"
+                       FontSize="14"
                        HorizontalAlignment="Center"
-                       Cursor="Hand" Click="AmphibiansBtn_Click"/>
+                       Cursor="Hand" Click="AmphibiansBtn_Click" RenderTransformOrigin="-2.096,0.751"/>
             <Button    x:Name="BirdsBtn"
                        Content="Ptaki"
-                       Foreground="White"
-                       Grid.Column="4"
-                       Margin="250,0,0,0"
+                       Foreground="Black"
+                       Height="50"
+                       Width="80"
+                       Grid.Column="6"
                        VerticalAlignment="Center"
+                       FontSize="14"
                        HorizontalAlignment="Center"
-                       Cursor="Hand" Click="BirdsBtn_Click"/>
+                       Cursor="Hand" Click="BirdsBtn_Click" RenderTransformOrigin="0.096,0.544"/>
             <Button    x:Name="ReptilesBtn"
                        Content="Gady"
-                       Foreground="White"
-                       Grid.Column="4"
-                       Margin="250,0,0,0"
+                       Foreground="Black"
+                       Height="50"
+                       Width="80"
+                       Grid.Column="7"
                        VerticalAlignment="Center"
+                       FontSize="14"
                        HorizontalAlignment="Center"
-                       Cursor="Hand" Click="ReptilesBtn_Click"/>
-        
+                       Cursor="Hand" Click="ReptilesBtn_Click" RenderTransformOrigin="0.573,0.5"/>
+
         </Grid>
 
         <Grid x:Name="GRID_CONTAINER" Grid.Row="1" Grid.ColumnSpan="2" Panel.ZIndex="-1">
 
-            <local:Home Visibility="Visible" x:Name="Home"></local:Home>
+
             <local:Mammals Visibility="Visible" x:Name="Mammals"></local:Mammals>
             <local:Amphibians Visibility="Visible" x:Name="Amphibians"></local:Amphibians>
             <local:Birds Visibility="Visible" x:Name="Birds"></local:Birds>
             <local:Reptiles Visibility="Visible" x:Name="Reptiles"></local:Reptiles>
+            <local:Home Visibility="Visible" x:Name="Home"></local:Home>
 
         </Grid>
 

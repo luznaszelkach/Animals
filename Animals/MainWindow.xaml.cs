@@ -52,6 +52,8 @@ namespace Animals
             Birds.Visibility = Visibility.Collapsed;
             Reptiles.Visibility = Visibility.Collapsed;
             control.Visibility = Visibility.Visible;
+
+
         }
        
         private void Home_Loaded(object sender, RoutedEventArgs e)
