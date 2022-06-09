@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Animals"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="1200">
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
@@ -54,6 +54,14 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Cursor="Hand" Click="AmphibiansBtn_Click"/>
+            <Button    x:Name="BirdsBtn"
+                       Content="Ptaki"
+                       Foreground="White"
+                       Grid.Column="4"
+                       Margin="250,0,0,0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Cursor="Hand" Click="BirdsBtn_Click"/>
         
         </Grid>
 
@@ -62,6 +70,7 @@
             <local:Home Visibility="Visible" x:Name="Home"></local:Home>
             <local:Mammals Visibility="Visible" x:Name="Mammals"></local:Mammals>
             <local:Amphibians Visibility="Visible" x:Name="Amphibians"></local:Amphibians>
+            <local:Birds Visibility="Visible" x:Name="Birds"></local:Birds>
 
         </Grid>
 
