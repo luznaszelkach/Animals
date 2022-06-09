@@ -95,11 +95,11 @@
                        Height="50"
                        Width="80"
                        Background="YellowGreen"
-                       Grid.Column="9"
+                       Grid.Column="11"
                        VerticalAlignment="Center"
                        FontSize="14"
-                       HorizontalAlignment="Center"
-                       Cursor="Hand" Click="EditorBtn_Click" RenderTransformOrigin="0.53,0.564"/>
+                       HorizontalAlignment="Left"
+                       Cursor="Hand" Click="EditorBtn_Click" RenderTransformOrigin="0.53,0.564" Margin="3,0,0,0"/>
 
 
         </Grid>
