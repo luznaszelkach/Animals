@@ -46,7 +46,7 @@ namespace Animals
         {
             SqlCommand command = new SqlCommand($"SELECT * FROM Mammals WHERE id like '{AnimalID.Text}'", conn);
             if (AnimalID.Text == string.Empty)
-                command = new SqlCommand($"SELECT * FROM Dinner", conn);
+                command = new SqlCommand($"SELECT * FROM Mammals", conn);
 
 
 

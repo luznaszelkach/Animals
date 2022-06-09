@@ -46,12 +46,22 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Cursor="Hand" Click="MammalsBtn_Click"/>
+            <Button    x:Name="AmphibiansBtn"
+                       Content="Płazy"
+                       Foreground="White"
+                       Grid.Column="4"
+                       Margin="150,0,0,0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Cursor="Hand" Click="AmphibiansBtn_Click"/>
+        
         </Grid>
 
         <Grid x:Name="GRID_CONTAINER" Grid.Row="1" Grid.ColumnSpan="2" Panel.ZIndex="-1">
 
             <local:Home Visibility="Visible" x:Name="Home"></local:Home>
             <local:Mammals Visibility="Visible" x:Name="Mammals"></local:Mammals>
+            <local:Amphibians Visibility="Visible" x:Name="Amphibians"></local:Amphibians>
 
         </Grid>
 
