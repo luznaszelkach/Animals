@@ -39,7 +39,7 @@
                        VerticalAlignment="Center"
                        FontSize="14"
                        FontWeight="Bold" Grid.ColumnSpan="3"  Grid.Column="1" HorizontalAlignment="Left" Click="HomeBtn_Click"/>
-            <Button    x:Name="StudentsBtn"
+            <Button    x:Name="MammalsBtn"
                        Content="Mammals"
                        Foreground="White"
                        Grid.Column="4"
