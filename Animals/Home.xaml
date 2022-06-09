@@ -10,7 +10,7 @@
 
     <Grid>
         <TextBlock Text="Atlas Zwierząt"
-                           Foreground="OrangeRed"
+                           Foreground="NavajoWhite"
                            FontSize="48"
                            HorizontalAlignment="Center"
                            FontWeight="Medium"

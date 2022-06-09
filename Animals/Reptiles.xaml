@@ -31,33 +31,33 @@
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12" PreviewTextInput="NumberValidation">
-                <Label Content="Numer"></Label>
-                <TextBox x:Name="AnimalID" Width="100"></TextBox>
+                <Label Content="Numer" HorizontalAlignment="Center"></Label>
+                <TextBox x:Name="AnimalID" Width="100" HorizontalAlignment="Center"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
-                <Label Content="Nazwa"></Label>
-                <TextBox x:Name="Name" Width="180"></TextBox>
+                <Label Content="Nazwa" HorizontalAlignment="Center"></Label>
+                <TextBox x:Name="Name" Width="180" HorizontalAlignment="Center"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
-                <Label Content="Odżywianie"></Label>
-                <TextBox x:Name="Nutrition" Width="180"></TextBox>
+                <Label Content="Odżywianie" HorizontalAlignment="Center"></Label>
+                <TextBox x:Name="Nutrition" Width="180" HorizontalAlignment="Center"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12" PreviewTextInput="LetterValidation">
-                <Label Content="Występowanie"></Label>
-                <TextBox x:Name="Location" Width="180"></TextBox>
+                <Label Content="Występowanie" HorizontalAlignment="Center"></Label>
+                <TextBox x:Name="Location" Width="180" HorizontalAlignment="Center"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12">
-                <Label Content="Rozmiar(cm)"></Label>
-                <TextBox x:Name="Size" Width="180"></TextBox>
+                <Label Content="Rozmiar(cm)" HorizontalAlignment="Center"></Label>
+                <TextBox x:Name="Size" Width="180" HorizontalAlignment="Center"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="100,0,0,12">
-                <Label Content="Waga(kg)"></Label>
-                <TextBox x:Name="Weight" Width="180"></TextBox>
+                <Label Content="Waga(kg)" HorizontalAlignment="Center"></Label>
+                <TextBox x:Name="Weight" Width="180" HorizontalAlignment="Center"></TextBox>
             </StackPanel>
 
             <Grid HorizontalAlignment="Left" Margin="0,75,0,0">
