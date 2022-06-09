@@ -1,0 +1,116 @@
+﻿<UserControl x:Class="Animals.Editor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Animals"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      >
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <StackPanel Margin="0,0,0,12">
+                <TextBlock Text="Zwierzęta"
+                       FontSize="32"
+                       FontWeight="DemiBold"
+                       Foreground="#454647"></TextBlock>
+                <TextBlock Text="Aby wyszukać, edytować lub usunąć"
+                       Foreground="#454647"
+                       Margin="0,12,0,0"></TextBlock>
+                <TextBlock Text="konkretnego studenta wprowadź jego ID"
+                       Foreground="#454647"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,12" PreviewTextInput="StudentsIDInputValidation">
+                <Label Content="ID"></Label>
+                <TextBox x:Name="AnimalsID" Width="100"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="0,0,0,12" PreviewTextInput="StudentsIDInputValidation">
+                <Label Content="Name"></Label>
+                <TextBox x:Name="AnimalName" Width="100"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,12" PreviewTextInput="StudentsNameInputValidation">
+                <Label Content="Nutrition"></Label>
+                <TextBox x:Name="AnimalsNutrition" Width="180"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,12" PreviewTextInput="StudentsNameInputValidation">
+                <Label Content="Location"></Label>
+                <TextBox x:Name="AnimalsLocation" Width="180"></TextBox>
+            
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,12">
+                <Label Content="Size"></Label>
+                <TextBox x:Name="AnimalsSize" Width="180"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="0,0,0,12">
+                <Label Content="Weight"></Label>
+                <TextBox x:Name="AnimalsWeight" Width="180"></TextBox>
+            </StackPanel>
+
+            <Grid HorizontalAlignment="Left" Margin="0,75,0,0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Background="#7CBD40" Grid.Column="0" Grid.Row="0"
+                        Width="140"
+                        Height="40"
+                        FontSize="16"
+                        FontWeight="DemiBold"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Margin="0,0,15,15" 
+                        Click="ReadStudents"
+                        Cursor="Hand">SZUKAJ</Button>
+                <Button Background="#4090BD" Grid.Column="1" Grid.Row="0"
+                        Width="140"
+                            Cursor="Hand"
+                        Height="40"
+                        FontSize="16"
+                        FontWeight="DemiBold"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Margin="0,0,0,15" Click="InsertStudent">DODAJ</Button>
+                <Button Background="#FFE381" Grid.Column="0" Grid.Row="1"
+                        Width="140"
+                            Cursor="Hand"
+                        Height="40"
+                        FontSize="16"
+                        FontWeight="DemiBold"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Margin="0,0,15,0" Click="UpdateStudent">EDYTUJ</Button>
+                <Button Background="#ED7969" Grid.Column="1" Grid.Row="1"
+                        Width="140"
+                        Height="40"
+                        Cursor="Hand"
+                        FontSize="16"
+                        FontWeight="DemiBold"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Margin="0,0,0,0" VerticalAlignment="Bottom" Click="DeleteStudent">USUŃ</Button>
+            </Grid>
+        </StackPanel>
+        <Grid Grid.Column="1" Grid.ColumnSpan="2">
+            <DataGrid Name="StudentsTable" IsReadOnly="True"></DataGrid>
+        </Grid>
+    </Grid>
+</UserControl>

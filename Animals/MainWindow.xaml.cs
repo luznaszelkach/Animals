@@ -44,6 +44,10 @@ namespace Animals
         {
             ChangePage(Reptiles);
         }
+        private void EditorBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ChangePage(Editor);
+        }
         public void ChangePage(UserControl control)
         {
             Home.Visibility = Visibility.Collapsed;
@@ -51,7 +55,9 @@ namespace Animals
             Amphibians.Visibility = Visibility.Collapsed;
             Birds.Visibility = Visibility.Collapsed;
             Reptiles.Visibility = Visibility.Collapsed;
+            Editor.Visibility = Visibility.Collapsed;
             control.Visibility = Visibility.Visible;
+            
 
 
         }

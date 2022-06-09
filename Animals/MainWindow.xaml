@@ -89,6 +89,18 @@
                        FontSize="14"
                        HorizontalAlignment="Center"
                        Cursor="Hand" Click="ReptilesBtn_Click" RenderTransformOrigin="0.53,0.564"/>
+            <Button    x:Name="EditorBtn"
+                       Content="Editor"
+                       Foreground="Black"
+                       Height="50"
+                       Width="80"
+                       Background="YellowGreen"
+                       Grid.Column="9"
+                       VerticalAlignment="Center"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       Cursor="Hand" Click="EditorBtn_Click" RenderTransformOrigin="0.53,0.564"/>
+
 
         </Grid>
 
@@ -100,6 +112,7 @@
             <local:Birds Visibility="Visible" x:Name="Birds"></local:Birds>
             <local:Reptiles Visibility="Visible" x:Name="Reptiles"></local:Reptiles>
             <local:Home Visibility="Visible" x:Name="Home"></local:Home>
+            <local:Editor Visibility="Visible" x:Name="Editor"></local:Editor>
 
         </Grid>
 
