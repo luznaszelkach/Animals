@@ -1,0 +1,31 @@
+CREATE TABLE Reptiles (
+ id integer NOT NULL,
+ Name character varying(50) NOT NULL,
+ Size int NOT NULL,
+ Nutrition character varying(150) NOT NULL,
+ Location character varying(350) NOT NULL,
+ Weight int  NOT NULL,)
+insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(1,'Anakonda zielona','mięsożerny','Ameryka Południowa',400,250)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(2,'Krokodyl nilowy','mięsożerny','Afryka',420,400)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(3,'Krokodyl amerykański','mięsożerny','Ameryka Północna + Ameryka Południowa',440,450)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(4,'Legwan zielony','wszystkożerny','Ameryka Północna + Ameryka Południowa',35,4)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(5,'Waran z Komodo','mięsożerny','Azja',260,85)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(6,'Żółw skórzasty','mięsożerny','Europa + Afryka + Azja',150,350)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(7,'Żółw pustynny','roślinożerny','Afryka',50,40)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(8,'Żółw grecki','roslinożerny','Europa',30,1)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(9,'Gekon lamparci','mięsożerny','Azja',20,0.05)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(10,'Pyton królewski','mięsożerny','Afryka',140,5)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(11,'Boa dusiciel','mięsożerny','Ameryka Północna + Ameryka Południowa',220,12)
+ insert into Reptiles(id,Name,Nutrition,Location,Size,Weight)
+ values(12,'Kameleon lamparci','mięsożerny','Afryka',40,0.2)

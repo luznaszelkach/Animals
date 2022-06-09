@@ -145,5 +145,13 @@
   <ItemGroup>
     <Resource Include="Images\lew.png" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Database\Aphibians.txt" />
+    <Resource Include="Database\Birds.txt" />
+    <Resource Include="Database\Mammals.txt" />
+    <Resource Include="Database\Reptiles.txt" />
+    <Resource Include="Database\Zwierzeta.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

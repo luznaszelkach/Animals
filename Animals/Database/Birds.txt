@@ -1,0 +1,34 @@
+CREATE TABLE Birds (
+ id integer NOT NULL,
+ Name character varying(50) NOT NULL,
+ Size int NOT NULL,
+ Nutrition character varying(150) NOT NULL,
+ Location character varying(350) NOT NULL,
+ Weight int  NOT NULL,)
+insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(1,'Bielik','mięsożerny','Europa + Azja',80,5)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(2,'Sokół wędrowny','mięsożerny','Europa + Azja + Ameryka Południowa + Ameryka Północna + Australia +
+ Afryka',43,0.7)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(3,'Koliberek hawański','mięsożerny','Ameryka Południowa',5,0.002)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(4,'Puchacz śnieżny','wszystkożerny','Ameryka Północna + Azja + Europa',60,2)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(5,'Puchacz zwyczajny','mięsożerny','Europa + Azja',65,2)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(6,'Mewa śmieszka','mięsożerny','Europa + Afryka + Azja',38,0.28)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(7,'Wróbel zwyczajny','mięsożerny','Europa + Azja + Ameryka Południowa + Ameryka Północna + Australia +
+ Afryka',16,0.032)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(8,'Krzyżówka','mięsożerny','Europa + Azja + Ameryka Północna + Australia +
+ Afryka',55,1.4)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(9,'Flaming chilijski','wszystkożerne','Ameryka Południowa',120,2.3)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(10,'Bocian biały','mięsożerny','Europa + Azja + Afryka',110,3.4)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(11,'Ara zwyczajna','roślinożerna','Ameryka Południowa',83,1.2)
+ insert into Birds(id,Name,Nutrition,Location,Size,Weight)
+ values(12,'Czapla siwa','mięsożerny','Europa + Azja + Afryka',90,1.5)

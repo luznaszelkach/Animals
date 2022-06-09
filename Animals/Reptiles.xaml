@@ -58,7 +58,7 @@
             </StackPanel>
 
             <StackPanel Margin="0,0,0,12">
-                <Label Content="Waga(kg)" HorizontalAlignment="Center"></Label>
+                <Label Content="Waga(g)" HorizontalAlignment="Center"></Label>
                 <TextBox x:Name="Weight" Width="180" HorizontalAlignment="Center"></TextBox>
             </StackPanel>
 

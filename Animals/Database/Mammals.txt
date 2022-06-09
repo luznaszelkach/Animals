@@ -1,0 +1,32 @@
+Create Database Animals
+CREATE TABLE Mammals (
+ id integer NOT NULL,
+ Name character varying(50) NOT NULL,
+ Size int NOT NULL,
+ Nutrition character varying(150) NOT NULL,
+ Location character varying(350) NOT NULL,
+ Weight int  NOT NULL,)
+insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(1,'Niedźwiedź brunatny','mięsożerny','Europa + Ameryka Północna + Azja',120,389)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(2,'Tygrys bengalski','mięsożerny','Azja',110,180)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(3,'Lew afrykański','mięsożerny','Afryka',120,190)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(4,'Słoń indyjski','roślinożerny','Azja',280,4000)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(5,'Żyrafa','roślinożerny','Afryka',550,1300)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(6,'Dziobak australijski','mięsożerny','Australia',12,2)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(7,'Koala australijski','roślinożerny','Australia',50,10)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(8,'Panda wielka','roślinożerny','Azja',70,90)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(9,'Nosorożec biały','roślinożerny','Afryka',180,2300)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(10,'Lampart plamisty','mięsożerny','Europa + Ameryka Północna + Azja',65,31)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(11,'Niedźwiedź polarny','mięsożerny','Europa + Ameryka Północna + Azja',130,450)
+ insert into Mammals(id,Name,Nutrition,Location,Size ,Weight)
+ values(12,'Lis polarny','mięsożerny','Europa + Ameryka Północna + Azja',30,5)

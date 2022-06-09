@@ -1,0 +1,31 @@
+CREATE TABLE Amphibians (
+ id integer NOT NULL,
+ Name character varying(50) NOT NULL,
+ Size int NOT NULL,
+ Nutrition character varying(150) NOT NULL,
+ Location character varying(350) NOT NULL,
+ Weight int  NOT NULL,)
+insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(1,'Salamandra plamista','mięsożerny','Europa',20,0.019)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(2,'Ropucha szara','mięsożerny','Europa + Azja',15,0.04)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(3,'Żaba trawna','mięsożerny','Europa + Azja',10,0.015)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(4,'Salamandra olbrzymia chińska','mięsożerny','Azja',120,25)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(5,'Ambystoma','mięsożerny','Afryka',20,0.3)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(6,'Odmieniec amerykański','mięsożerny','Ameryka Północna',35,0.002)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(7,'Chwytnica kolorowa','mięsożerny','Ameryka Południowa + Ameryka Północna',5,0.0012)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(8,'Podeszczowik pustynny','mięsożerny','Afryka',6,0.01)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(9,'Liściołaz paskowany','mięsożerny','Ameryka Południowa',4,0.008)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(10,'Platana szponiasta','mięsożerny','Afryka',8,0.013)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(11,'Piękniś pomidorowy','mięsożerny','Afryka',6,0.041)
+ insert into Amphibians(id,Name,Nutrition,Location,Size,Weight)
+ values(12,'Grzbietoród amerykański','mięsożerny','+ Ameryka Południowa',10,0.5)
