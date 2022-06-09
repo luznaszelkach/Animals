@@ -62,6 +62,14 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Cursor="Hand" Click="BirdsBtn_Click"/>
+            <Button    x:Name="ReptilesBtn"
+                       Content="Gady"
+                       Foreground="White"
+                       Grid.Column="4"
+                       Margin="250,0,0,0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Cursor="Hand" Click="ReptilesBtn_Click"/>
         
         </Grid>
 
@@ -71,6 +79,7 @@
             <local:Mammals Visibility="Visible" x:Name="Mammals"></local:Mammals>
             <local:Amphibians Visibility="Visible" x:Name="Amphibians"></local:Amphibians>
             <local:Birds Visibility="Visible" x:Name="Birds"></local:Birds>
+            <local:Reptiles Visibility="Visible" x:Name="Reptiles"></local:Reptiles>
 
         </Grid>
 
