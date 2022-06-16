@@ -105,14 +105,12 @@
         </Grid>
 
         <Grid x:Name="GRID_CONTAINER" Grid.Row="1" Grid.ColumnSpan="2" Panel.ZIndex="-1">
-
-
             <local:Mammals Visibility="Visible" x:Name="Mammals"></local:Mammals>
             <local:Amphibians Visibility="Visible" x:Name="Amphibians"></local:Amphibians>
             <local:Birds Visibility="Visible" x:Name="Birds"></local:Birds>
             <local:Reptiles Visibility="Visible" x:Name="Reptiles"></local:Reptiles>
-            <local:Home Visibility="Visible" x:Name="Home"></local:Home>
             <local:Editor Visibility="Visible" x:Name="Editor"></local:Editor>
+            <local:Home Visibility="Visible" x:Name="Home"></local:Home>
 
         </Grid>
 
